@@ -9,6 +9,8 @@ Install using the Joomla Extensions Installer - https://docs.joomla.org/Installi
 
 After installation, assign the plugin to an Editor Profile in Editor Profiles -> Features & Layout -> Additional Features.
 
+![Enable SVG Elements](https://cdn.joomlacontenteditor.net/images/docs/svg/jce-editor-svg-enable.jpg)
+
 ## Notes
 This plugin adds support for the full list of SVG elements - https://developer.mozilla.org/en-US/docs/Web/SVG/Element - but for simplicity allows all possible attribute types for each element.
 
