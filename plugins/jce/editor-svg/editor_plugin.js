@@ -12,10 +12,6 @@
         extend = tinymce.extend,
         Node = tinymce.html.Node;
 
-    function split(str, delim) {
-        return str.split(delim || ',');
-    }
-
     // list of SVG tags
     var tags = [
         'defs','pattern','desc','metadata','g','mask','path','line','marker','rect','circle','ellipse','polygon','polyline','linearGradient','radialGradient','stop','image','view','text','textPath','title','tspan','glyph','symbol','switch','use'
