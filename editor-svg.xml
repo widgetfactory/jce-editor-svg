@@ -12,6 +12,7 @@
 	<icon></icon>
 	<files folder="plugins/jce/editor-svg">
 		<file plugin="editor-svg">editor_plugin.js</file>
+		<folder>language</folder>
 	</files>
 	<fields name="standard">
     		<fieldset name="config"></fieldset>
