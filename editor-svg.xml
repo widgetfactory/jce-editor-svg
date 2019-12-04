@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <extension version="2.5" type="plugin" group="jce" method="upgrade">
 	<name>PLG_JCE_EDITOR_SVG</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<creationDate>December 2017</creationDate>
 	<author>Ryan Demmer</author>
 	<authorEmail>info@joomlacontenteditor.net</authorEmail>
@@ -13,8 +13,10 @@
 	<files folder="plugins/jce/editor-svg">
 		<file plugin="editor-svg">editor_plugin.js</file>
 	</files>
-	<params group="standard"></params>
-	<languages folder="administrator/language/en-GB">
+	<fields name="standard">
+    		<fieldset name="config"></fieldset>
+  	</fields>
+	<languages folder="language/en-GB">
 		<language tag="en-GB">en-GB.plg_jce_editor-svg.ini</language>
 		<language tag="en-GB">en-GB.plg_jce_editor-svg.sys.ini</language>
 	</languages>
