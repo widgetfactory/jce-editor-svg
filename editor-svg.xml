@@ -16,7 +16,7 @@
 	<fields name="standard">
     		<fieldset name="config"></fieldset>
   	</fields>
-	<languages folder="language/en-GB">
+	<languages folder="plugins/jce/editor-svg/language/en-GB">
 		<language tag="en-GB">en-GB.plg_jce_editor-svg.ini</language>
 		<language tag="en-GB">en-GB.plg_jce_editor-svg.sys.ini</language>
 	</languages>
