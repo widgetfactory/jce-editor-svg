@@ -1,6 +1,6 @@
 /**
  * @package   	JCE
- * @copyright 	Copyright (c) 2009-2017 Ryan Demmer. All rights reserved.
+ * @copyright 	Copyright (c) 2009-2020 Ryan Demmer. All rights reserved.
  * @license   	GNU/GPL 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * JCE is free software. This version may have been modified pursuant
  * to the GNU General Public License, and as distributed it includes or
@@ -8,25 +8,22 @@
  * other free or open source software licenses.
  */
 (function () {
-    var each = tinymce.each,
-        extend = tinymce.extend,
-        Node = tinymce.html.Node;
+    var each = tinymce.each;
 
     // list of SVG tags
     var tags = [
-        'defs','pattern','desc','metadata','g','mask','path','line','marker','rect','circle','ellipse','polygon','polyline','linearGradient','radialGradient','stop','image','view','text','textPath','title','tspan','glyph','symbol','switch','use'
+        'defs', 'pattern', 'desc', 'metadata', 'g', 'mask', 'path', 'line', 'marker', 'rect', 'circle', 'ellipse', 'polygon', 'polyline', 'lineargradient', 'radialgradient', 'stop', 'image', 'view', 'text', 'textpath', 'title', 'tspan', 'glyph', 'symbol', 'switch', 'use'
     ];
 
     tinymce.create('tinymce.plugins.SvgPlugin', {
         init: function (ed, url) {
-            var self = this;
             this.editor = ed;
 
             ed.onPreInit.add(function () {
                 ed.schema.addValidElements('+svg[*]');
 
-                each(tags, function (v, k) {
-                    ed.schema.addValidElements(v + '[*]');
+                each(tags, function (name) {
+                    ed.schema.addValidElements('+' + name + '[*]');
                 });
 
                 ed.schema.addValidChildren('svg[' + tags.join(',') + ']');
